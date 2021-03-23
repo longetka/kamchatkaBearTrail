@@ -10,8 +10,8 @@
 	}
 	&__text {
 		height: 100%;
-		width: 57%;
-		padding-left: 125px;
+		width: 55%;
+		
 		& h3 {
 			height: 5rem;
 			@include font(
@@ -32,4 +32,11 @@
 				);
 		}
 	}
+}
+
+.p-l-13 {
+	padding-left: 13.4375rem;
+}
+.p-l-5 {
+	padding-left: 5.3125rem;
 }

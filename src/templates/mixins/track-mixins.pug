@@ -5,7 +5,7 @@ mixin track-card(image, title, subtitle, bgImg, rev)
 		.track-card__image.flex.flex-ai-c(class= rev ? 'flex-row-rev' : null)
 			img(src=image, alt=title)
 			.mountain(style="background: url(" + bgImg + ") no-repeat center center;")
-				.track-card__text.flex.flex-column.flex-jc-c
+				.track-card__text.flex.flex-column.flex-jc-c(class= rev ? 'p-l-13' : 'p-l-5')
 					h3= title
 					p= subtitle
 
