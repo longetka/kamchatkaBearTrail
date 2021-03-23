@@ -1,0 +1,21 @@
+.tour-card {
+
+	&__description {
+		height: 12.5rem;
+		background-color: $primary;
+		position: relative;
+		
+		& p {
+			height: 4.375rem;
+			@include wrapper($width: 1170px);
+			@include font(
+				$font: $oswaldRegular,
+				$size: 1rem,
+				$lh: normal,
+				$ls: normal,
+				$color: $white
+			);
+		}
+	}
+	@import '__program.scss';
+}

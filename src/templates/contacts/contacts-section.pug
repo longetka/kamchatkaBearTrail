@@ -1,0 +1,14 @@
+include ../mixins/one-day-tours-card.pug
+
+section.contacts
+	h3.page-title КОНТАКТЫ
+	.one-day-tours__card.flex
+		+one-day-tours-card('assets/images/contacts.png')
+		.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+			+card-text({
+				' ' : 'Как истинные путешественники, мы всегда в пути!',
+				'' : 'Связывайтесь с нами через WhatsApp, электронную почту и Instagram!',
+				'Звоните и заказывайте тур по Камчатке!' : ''})
+	.contacts__testis
+		h4.page-title Отзывы
+		include ../components/testis-carousel.pug

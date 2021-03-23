@@ -1,0 +1,15 @@
+.button-details {
+	width: 10.625rem;
+	padding: .75rem 0 .75rem 0;
+	box-shadow: 0 4px 10px rgba(210,66,4,.30);
+	background-color: $secondary;
+	text-decoration: none;
+	text-align: center;
+	@include font(
+		$font: $oswaldBold,
+		$size: 1rem,
+		$lh: normal,
+		$ls: normal,
+		$color: $white
+	)
+}

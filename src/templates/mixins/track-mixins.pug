@@ -1,0 +1,16 @@
+include ../mixins/button-details.pug
+
+mixin track-card(image, title, subtitle, bgImg, rev)
+	.track-card.flex
+		.track-card__image.flex.flex-ai-c(class= rev ? 'flex-row-rev' : null)
+			img(src=image, alt=title)
+			.mountain(style="background: url(" + bgImg + ") no-repeat center center;")
+				.track-card__text.flex.flex-column.flex-jc-c
+					h3= title
+					p= subtitle
+
+mixin details-card(image, title, href)
+	.details-card.flex.flex-column.flex-jc-sb.flex-ai-c
+		img(src=image, alt=title)
+		p= title
+		+button-details(href)

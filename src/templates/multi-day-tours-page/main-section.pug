@@ -1,0 +1,49 @@
+include ../mixins/one-day-tours-card.pug
+
+section
+	h1.page-title МНОГОДНЕВНЫЕ ТУРЫ
+	section.one-day-tours
+		.one-day-tours__card.flex
+			+one-day-tours-card('assets/images/multi-day-tours/vulkan-tolbachik.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+				+card-details('ТУР К ВУЛКАНУ ТОЛБАЧИК')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность: ' : '4 дня/3 ночи',
+					'Время проведения тура: ' : 'май-октябрь',
+					'Условия: ' : 'Проживание в гостевых домиках. На маршруте в двухместных палатках',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость тура: ' : 'от 30000 рублей с человека'})
+		.one-day-tours__card.flex.flex-row-rev
+			+one-day-tours-card('assets/images/multi-day-tours/vulkan-mutnov-and-goreliy.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-13
+				+card-details('МУТНОВСКИЙ И ГОРЕЛЫЙ ВУЛКАНЫ')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 12-ти',
+					'Продолжительность: ' : '2 дня/1 ночь',
+					'Время проведения тура: ' : 'июль-октябрь',
+					'Условия: ' : 'проживание в двухместных палатках',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость тура: ' : '24000 рублей с человека'})
+		.one-day-tours__card.flex
+			+one-day-tours-card('assets/images/multi-day-tours/tolbachik-kluchevskaya.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+				+card-details('ТОЛБАЧИК-КЛЮЧЕВСКАЯ')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 12-ти',
+					'Продолжительность: ' : '5 дней/4 ночи',
+					'Время проведения тура: ' : 'июнь-сентябрь',
+					'Условия: ' : 'ночевки в домиках или на базах отдыха, на вулкане ночевки в палатках',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость тура: ' : 'от 40000 рублей с человека'})
+		.one-day-tours__card.flex.flex-row-rev
+			+one-day-tours-card('assets/images/multi-day-tours/esso-tolbachik.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-13
+				+card-details('ЭССО-ТОЛБАЧИК')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 12-ти',
+					'Продолжительность: ' : '6 дней/5 ночей',
+					'Время проведения тура: ' : 'июль-сентябрь',
+					'Условия: ' : 'Проживание в гостевых домиках. На маршруте в двухместных палатках',
+					'Вид путешествия: ' : 'автомобильно-пешеходныйб рафтинг',
+					'Стоимость тура: ' : 'от 40000 рублей с человека'})

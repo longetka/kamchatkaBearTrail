@@ -1,0 +1,7 @@
+.global-header {
+	background: url('../images/global-header-background.png') no-repeat;
+	height: 9.8125rem;
+	&__wrapper {
+		@include wrapper($width: 1170px);
+	}
+}

@@ -1,0 +1,120 @@
+include ../mixins/one-day-tours-card.pug
+
+section
+	h1.page-title ОДНОДНЕВНЫЕ ТУРЫ
+	section.one-day-tours
+		.one-day-tours__card.flex
+			+one-day-tours-card('assets/images/one-day-tours/vulkan-mutnov.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+				+card-details('ВОСХОЖДЕНИЕ НА МУТНОВСКИЙ ВУЛКАН')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '10-12 часов',
+					'Подъём на вершину: ' : 'от 2 до 4 часов',
+					'Время проведения тура: ' : 'июнь-сентябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '8000 рублей с человека'})
+		.one-day-tours__card.flex.flex-row-rev
+			+one-day-tours-card('assets/images/one-day-tours/vulkan-avachin.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-13
+				+card-details('ВОСХОЖДЕНИЕ НА ВУЛКАН АВАЧИНСКИЙ')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '9-12 часов',
+					'Подъём на вершину: ' : 'от 4 до 8 часов',
+					'Время проведения тура: ' : 'июнь-сентябрь',
+					'Сложность: ' : 'Тур рассчитан для людей со средней физической подготовкой',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '7000 рублей с человека'})
+		.one-day-tours__card.flex
+			+one-day-tours-card('assets/images/one-day-tours/vulkan-goreliy.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+				+card-details('ВОСХОЖДЕНИЕ НА ВУЛКАН ГОРЕЛЫЙ')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '9-12 часов',
+					'Подъём на вершину: ' : 'от 2 до 4 часов',
+					'Время проведения тура: ' : 'июнь-сентябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '7500 рублей с человека'})
+		.one-day-tours__card.flex.flex-row-rev
+			+one-day-tours-card('assets/images/one-day-tours/mount-array-vachkajec.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-13
+				+card-details('ГОРНЫЙ МАССИВ "ВАЧКАЖЕЦ"')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '6-12 часов',
+					'Время проведения тура: ' : 'июнь-октябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '7000 рублей с человека'})
+		.one-day-tours__card.flex
+			+one-day-tours-card('assets/images/one-day-tours/ganal-ridge.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+				+card-details('ГАНАЛЬСКИЙ ХРЕБЕТ. ГАНАЛЬСКИЕ ВОСТРЯКИ')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '10-12 часов',
+					'Время проведения тура: ' : 'июнь-октябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '10000 рублей с человека'})
+		.one-day-tours__card.flex.flex-row-rev
+			+one-day-tours-card('assets/images/one-day-tours/three-brother.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-13
+				+card-details('«ТРИ БРАТА». ПЕТРОПАВЛОВСКИЙ МАЯК')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '4-5 часов',
+					'Время проведения тура: ' : 'июнь-октябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '6000 рублей с человека'})
+		.one-day-tours__card.flex
+			+one-day-tours-card('assets/images/one-day-tours/avachin-pass.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+				+card-details('АВАЧИНСКИЙ ПЕРЕВАЛ. ЭКСКУРСИЯ «ВЕРБЛЮД»')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '7-8 часов',
+					'Время проведения тура: ' : 'июнь-октябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '5000 рублей с человека'})
+		.one-day-tours__card.flex.flex-row-rev
+			+one-day-tours-card('assets/images/one-day-tours/tolmachevo-lake.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-13
+				+card-details('ОЗЕРО ТОЛМАЧЕВО. АПАЧИНСКИЕ ТЕРМАЛЬНЫЕ ИСТОЧНИКИ')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '8-10 часов',
+					'Время проведения тура: ' : 'июнь-октябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '7500 рублей с человека'})
+		.one-day-tours__card.flex
+			+one-day-tours-card('assets/images/one-day-tours/volkano-caves.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+				+card-details('ПЕЩЕРЫ ВУЛКАНА ГОРЕЛЫЙ')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '3-4 часа',
+					'Время проведения тура: ' : 'июнь-сентябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '7500 рублей с человека'})
+		.one-day-tours__card.flex.flex-row-rev
+			+one-day-tours-card('assets/images/one-day-tours/pacific-ocean.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-13
+				+card-details('ТИХИЙ ОКЕАН. ХАЛАКТЫРСКИЙ ПЛЯЖ')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '4-5 часов',
+					'Время проведения тура: ' : 'июнь-октябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '3000-4000 рублей с человека'})
+		.one-day-tours__card.flex
+			+one-day-tours-card('assets/images/one-day-tours/termal-sources.png')
+			.one-day-tours__main.flex.flex-column.flex-jc-c.pl-1
+				+card-details('ДАЧНЫЕ ТЕРМАЛЬНЫЕ ИСТОЧНИКИ («МАЛАЯ ДОЛИНА ГЕЙЗЕРОВ»)')
+				+card-text({
+					'Количество человек в группе: ' : 'от 3-х до 8-ми',
+					'Продолжительность экскурсии: ' : '8-10 часов',
+					'Время проведения тура: ' : 'июнь-октябрь',
+					'Вид путешествия: ' : 'автомобильно-пешеходный',
+					'Стоимость: ' : '7000 рублей с человека'})
+		

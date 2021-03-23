@@ -1,0 +1,33 @@
+.navbar {
+	margin: 0 auto;
+	padding-top: 1.3125rem;
+	&__list a,
+	&__contacts a {
+		text-decoration: none;
+	}
+	&__list {
+		display: inline-flex;
+		flex-basis: 41.28%;
+		& a {
+			@include font(
+				$font: $oswaldRegular,
+				$size: .875rem,
+				$lh: normal,
+				$ls: normal,
+				$color: $white
+			);
+		}
+	}
+	&__contacts {
+		flex-basis: 12.906%;
+		& a {
+			@include font(
+				$font: $oswaldBold,
+				$size: .875rem,
+				$lh: normal,
+				$ls: normal,
+				$color: $white
+			);
+		}
+	}
+}

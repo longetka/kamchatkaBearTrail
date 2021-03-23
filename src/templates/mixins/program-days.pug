@@ -1,0 +1,6 @@
+mixin program-days(day, description, rev)
+	.program-day(class= rev ? 'brd-left p-left left' : 'brd-right p-right right')
+		h3.program-day__title(class= rev ? 't-a-left' : 't-a-right')= day
+		ul
+			each point in description
+				li.program-day__description(class= rev ? 't-a-left' : 't-a-right')= point

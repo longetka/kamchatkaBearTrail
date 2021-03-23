@@ -1,0 +1,7 @@
+.global-footer {
+	background-color: $primary;
+	height: 9.8125rem;
+	&__wrapper {
+		@include wrapper($width: 1170px);
+	}
+}

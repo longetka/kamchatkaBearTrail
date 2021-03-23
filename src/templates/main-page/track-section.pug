@@ -1,0 +1,20 @@
+include ../mixins/track-mixins.pug
+
+section.track
+	.track__wrapper
+		img.track__img-track(src="assets/images/track.png", alt="Travel track")
+		.track-cards
+			+track-card('assets/images/vulkans.png', 'ВОСХОЖДЕНИЕ НА ДЕЙСТВУЮЩИЕ ВУЛКАНЫ', 'Авачинский, Мутновский, Горелый, Плоский Толбачик.', 'assets/images/bewitches.png')
+			+track-card('assets/images/walks.png', 'ПРОГУЛКИ', 'По альпийским лугам возле самого необычного хребта Камчатки «Ганальские Востряки», древнему вулканическому потоку вулкана Горелого с его пещерами и водопадами, по вулканическому песку самых редких в мире черных пляжей, расположенных на берегу Тихого океана.', 'assets/images/surprises.png', true)
+			+track-card('assets/images/travel.png', 'ПУТЕШЕСТВИЕ', 'По шлаковым и вулканическим полям с лунными пейзажами, разговорами у костра в мертвом лесу возле вулкана Плоский Толбачик и даже по каньону вымытому рекой в лавовом потоке в окружении вулканов.', 'assets/images/excite.png')
+			+track-card('assets/images/rafting.png', 'СПЛАВ', 'По горной реке В окружении первозданной природы', 'assets/images/in-memories.png', true)
+		.track-details.flex.flex-column.flex-ai-c
+			img(src="assets/images/text-logotype.png", alt="Kamchatka Bear Trails text logotype")
+			.track-details__main.flex.flex-jc-sb
+				+details-card('assets/images/backpack.png', 'ОДНОДНЕВНЫЕ ТУРЫ', '/one-day-tours.html')
+				p Можем составить тур по вашему желанию с фото и видео сопровождением.
+				+details-card('assets/images/camping-tent.png', 'МНОГОДНЕВНЫЕ ТУРЫ', '/multi-day-tours.html')
+		include ../components/footer-social.pug
+
+
+

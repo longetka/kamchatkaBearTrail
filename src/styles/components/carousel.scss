@@ -1,0 +1,25 @@
+.carousel {
+	height: 700px;
+	position: relative;
+	&__item {
+		height: 670px;
+	}
+}
+.flickity-page-dots {
+	bottom: 30px;
+}
+.flickity-page-dots .dot {
+	background: #C4C4C4;
+}
+
+.testis-carousel {
+	@include wrapper($width: 1170px);
+	height: 28.5rem;
+	padding-bottom: 4.375rem;
+	&-item {
+		width: 16.875rem;
+		height: 100%;
+		box-shadow: 0 4px 10px rgba(0,0,0,.1);
+		margin: 0 .9375rem 0 .9375rem;
+	}
+}

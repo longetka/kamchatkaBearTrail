@@ -1,0 +1,22 @@
+include ../mixins/button-details.pug
+
+mixin card-details(title)
+	.one-day-tours__title
+		h3= title
+
+mixin card-text(obj)
+	.one-day-tours__text.flex.flex-column.flex-jc-c
+		each title, text in obj
+			p= text 
+				span= title
+	+button-details('tour-card.html')
+
+mixin card-text-no-btn(obj)
+	.one-day-tours__text.flex.flex-column.flex-jc-c
+		each title, text in obj
+			p= text 
+				span= title
+
+mixin one-day-tours-card(image)
+	.one-day-tours__img
+		img(src=image)

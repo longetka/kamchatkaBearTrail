@@ -1,0 +1,76 @@
+// Flex
+.flex {
+    display: flex;
+
+    &-column {
+        flex-direction: column;
+    }
+    &-row-rev {
+        flex-direction: row-reverse;
+    }
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-sa {
+        justify-content: space-around;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-ai-fe {
+        align-items: flex-end;
+    }
+    &-wrap {
+        flex-wrap: wrap;
+    }
+}
+
+// Text
+.page-title {
+    text-align: center;
+    padding-top: 3.75rem;
+    padding-bottom: 3.125rem;
+    @include font(
+        $font: $oswaldBold,
+        $size: 2.5rem,
+        $lh: normal,
+        $ls: normal,
+        $color: $primary
+    );
+}
+.block-title {
+    text-align: center;
+    padding-top: 2.625rem;
+    padding-bottom: 1.5625rem;
+    @include font(
+        $font: $oswaldBold,
+        $size: 1.625rem,
+        $lh: normal,
+        $ls: normal,
+        $color: $primary
+    );
+}
+.block-subtitle {
+    text-align: center;
+    padding-bottom: 2.375rem;
+    @include font(
+        $font: $oswaldRegular,
+        $size: 1rem,
+        $lh: normal,
+        $ls: normal,
+        $color: $primary
+    );
+}
+
+// Ragged border
+.ragged-border-bot-blue {
+    background: url('../images/ragged-border-bot-blue.png');
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

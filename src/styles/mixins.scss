@@ -1,0 +1,14 @@
+// Font
+@mixin font($font, $size, $lh, $ls, $color) {
+    font: {
+        family: $font;
+        size: $size;
+    }
+    color: $color;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin wrapper($width) {
+    width: $width;
+	margin: 0 auto;
+}

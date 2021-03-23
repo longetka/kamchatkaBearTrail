@@ -1,0 +1,36 @@
+.track {
+	@include wrapper($width: 100%);
+	position: relative;
+	&__img-track {
+		position: absolute;
+		top: 14.5rem;
+		right: 13.4375rem;
+		height: 1900px;
+	}
+	@import '../../components/track-card/index.scss';
+
+	&-details {
+		padding-top: 4.375rem;
+		padding-bottom: 2.5rem;
+		width: 50rem;
+		margin: 0 auto;
+		&__main {
+			padding-top: .625rem;
+			& p {
+				flex-basis: 23%;
+				text-align: center;
+				@include font(
+					$font: $oswaldBold,
+					$size: 1.25rem,
+					$lh: normal,
+					$ls: normal,
+					$color: #000000
+				);
+			}
+		}
+		.details-card {
+			& img { height: 5.1875rem; }
+			height: 13.75rem;
+		}
+	}
+}

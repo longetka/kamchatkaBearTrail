@@ -1,0 +1,46 @@
+// Reset CSS
+@import 'reset.scss';
+
+// Fonts
+@import 'fonts.scss';
+
+// Variables
+@import 'variables.scss';
+
+// Mixins
+@import 'mixins.scss';
+
+// Global
+@import 'global.scss';
+
+// Components
+    // Navbar
+        @import './components/navbar/index.scss';
+    // Button-details
+        @import './components/button-details.scss';
+    // Global-header
+        @import './components/header/index.scss';
+    // Global-footer
+        @import './components/footer/footer.scss';
+    // Footer-social
+        @import './components/footer/footer-social.scss';
+    // Carousel
+        @import './components/carousel.scss';
+
+// Pages
+    // Main-page
+        @import './pages/main/index.scss';
+    // One day tours page
+        @import './pages/one-day-tours/index.scss';
+    // Tour Card
+        @import './pages/tour-card/index.scss';
+
+        
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}

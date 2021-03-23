@@ -1,0 +1,23 @@
+.footer-social {
+	height: 97px;
+	background: url('../images/background-track-social.jpg') no-repeat;
+	&__link {
+		& a {
+			text-decoration: none;
+			padding-bottom: .625rem;
+			@include font(
+				$font: $oswaldBold,
+				$size: 1.25rem,
+				$lh: normal,
+				$ls: normal,
+				$color: $white
+			);
+			& img {
+				padding-left: .625rem;
+			}
+		}
+	}
+	&__link:not(:first-child) {
+		padding-left: 2.625rem;
+	}
+}
