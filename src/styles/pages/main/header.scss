@@ -1,11 +1,16 @@
 .header {
 	&__wrapper {
-		@include wrapper($width: 1170px);
-		height: 52.3125rem;
+		// @include wrapper($width: 1170px);
+		background: url('../images/background-header.png') no-repeat;
+		background-size: cover;
+		height: 100vh;
 	}
 	&__bg-video {
 		position: absolute;
 		z-index: -1;
+		top: 0;
+		left: 0;
+		// width: 100vw;
 	}
 	&__offer {
 		padding: 4.6875rem 0 7.1875rem 0;
@@ -21,6 +26,6 @@
 		}
 	}
 	&__bg-bottom {
-
+		width: 100%;
 	}
 }

@@ -77,3 +77,6 @@
 		border-radius: 50%;
 	}
 }
+@media screen and (max-width: 1200px) {
+    .program__container { width: 100%; }
+}

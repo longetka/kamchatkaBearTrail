@@ -2,6 +2,20 @@
 	background-color: $primary;
 	height: 9.8125rem;
 	&__wrapper {
-		@include wrapper($width: 1170px);
+		@include wrapper($width: 100%);
+	}
+}
+@media screen and (max-width: 1200px) {
+	.global-footer__wrapper { @include wrapper($width: 100%); }
+}
+@media screen and (max-width: 991px) {
+	.global-footer__wrapper { @include wrapper($width: 100%); }
+}
+@media screen and (max-width: 768px) {
+	.global-footer {
+		height: 16.8125rem;
+		&__wrapper {
+			@include wrapper($width: 100%);
+		}
 	}
 }

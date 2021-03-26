@@ -1,7 +1,44 @@
 .global-header {
-	background: url('../images/global-header-background.png') no-repeat;
+	background: url('../images/global-header-background.png') repeat;
 	height: 9.8125rem;
 	&__wrapper {
-		@include wrapper($width: 1170px);
+		@include wrapper($width: 100%);
 	}
 }
+@media screen and (max-width: 1200px) {
+    .global-header {
+		background-size: cover;
+		height: 10.8125rem;
+		&__wrapper {
+			width: 100%;
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+    .global-header {
+		background-size: cover;
+		height: 10.8125rem;
+		&__wrapper {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.global-header {
+		background-size: cover;
+		height: 20rem;
+		&__wrapper {
+			width: 540px;
+		}
+	}
+}
+// @media screen and (max-width: 575px) {
+// 	.global-header {
+// 		background-size: cover;
+// 		height: 20rem;
+// 		&__wrapper {
+// 			width: 540px;
+// 		}
+// 	}
+// }

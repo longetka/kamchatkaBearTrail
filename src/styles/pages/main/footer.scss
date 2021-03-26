@@ -1,5 +1,6 @@
 .footer {
-	background: url('../images/background-footer.png') no-repeat;
+	width: 100%;
+	background: url('../images/background-footer.png') no-repeat center center;
 	height: 25rem;
 	position: relative;
 	&::after {

@@ -1,5 +1,6 @@
 .navbar {
 	margin: 0 auto;
+	padding: 0 1rem;
 	padding-top: 1.3125rem;
 	&__list a,
 	&__contacts a {
@@ -29,6 +30,35 @@
 				$ls: normal,
 				$color: $white
 			);
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.navbar {
+		
+		&__list {
+			display: flex;
+			flex-direction: column;
+		}
+		&__contacts {
+			flex-basis: 20%;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.navbar {
+		height: 14rem;
+		flex-direction: column;
+		&__logo {
+			flex: 30%;
+			& img {
+				width: 100%;
+			}
+		}
+		&__list {
+			width: 80%;
+			flex-basis: 100%;
+			flex-direction: row;
 		}
 	}
 }

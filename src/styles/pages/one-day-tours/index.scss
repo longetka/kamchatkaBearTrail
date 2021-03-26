@@ -1,7 +1,12 @@
 .one-day-tours {
-
+	& img {
+		// width: 100%;
+	}
 	&__card {
 		width: 100%;
+		& img {
+			width: 100%;
+		}
 	}
 	&__title {
 		padding-bottom: 1.5625rem;
@@ -40,9 +45,54 @@
 		}
 	}
 }
+
 .pl-13 {
-	padding-left: 13.4375rem;
+	padding-left: 5.4375rem;
 }
 .pl-1 {
 	padding-left: 1rem;
+}
+@media screen and (max-width: 1600px) {
+	.pl-13 {
+		padding-left: 1rem;
+	}
+	.one-day-tours {
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.pl-13 {
+		padding-left: 1rem;
+	}
+	.one-day-tours {
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	.pl-13 {
+		padding-left: 1rem;
+	}
+	.one-day-tours {
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.pl-13 {
+		padding-left: 1rem;
+	}
+	.one-day-tours {
+		& img {
+			width: 100%;
+		}
+	}
 }

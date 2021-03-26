@@ -13,7 +13,7 @@
 }
 
 .testis-carousel {
-	@include wrapper($width: 1170px);
+	@include wrapper($width: 100%);
 	height: 28.5rem;
 	padding-bottom: 4.375rem;
 	&-item {

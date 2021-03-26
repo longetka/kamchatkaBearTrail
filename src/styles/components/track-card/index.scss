@@ -1,5 +1,8 @@
 .track-card {
 	// position: relative;
+	& img {
+		width: 100%;
+	}
 	&__image {
 		z-index: -1;
 		width: 100%;
@@ -39,4 +42,49 @@
 }
 .p-l-5 {
 	padding-left: 5.3125rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .track-card {
+		&__text {
+			width: 80%;
+		}
+		& img {
+			width: 50%;
+		}
+	}
+	.p-l-13 {
+		padding-left: 1.4375rem;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+    .track-card {
+		&__text {
+			width: 80%;
+		}
+		& img {
+			width: 50%;
+		}
+	}
+	.p-l-13 {
+		padding-left: 1.4375rem;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.track-card {
+		&__text {
+			width: 90%;
+		}
+		& img {
+			width: 50%;
+		}
+	}
+	.p-l-13 {
+		padding-left: 1.4375rem;
+	}
+	.p-l-5 {
+		padding-left: 1.3125rem;
+	}
 }

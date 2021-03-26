@@ -1,6 +1,7 @@
 .track {
 	@include wrapper($width: 100%);
 	position: relative;
+	
 	&__img-track {
 		position: absolute;
 		top: 14.5rem;
@@ -33,4 +34,7 @@
 			height: 13.75rem;
 		}
 	}
+}
+@media screen and (max-width: 1200px) {
+    .track__img-track { display: none; }
 }
