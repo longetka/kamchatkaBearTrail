@@ -29,16 +29,16 @@
 		background-size: cover;
 		height: 20rem;
 		&__wrapper {
-			width: 540px;
+			width: 100%;
 		}
 	}
 }
-// @media screen and (max-width: 575px) {
-// 	.global-header {
-// 		background-size: cover;
-// 		height: 20rem;
-// 		&__wrapper {
-// 			width: 540px;
-// 		}
-// 	}
-// }
+@media screen and (max-width: 540px) {
+	.global-header {
+		background-size: cover;
+		height: 28rem;
+		&__wrapper {
+			width: 100%;
+		}
+	}
+}

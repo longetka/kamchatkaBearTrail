@@ -4,16 +4,16 @@
 	
 	&__img-track {
 		position: absolute;
-		top: 14.5rem;
-		right: 13.4375rem;
-		height: 1900px;
+		top: 10.5rem;
+    	right: 3.4375rem;
+		height: 2000px;
 	}
 	@import '../../components/track-card/index.scss';
 
 	&-details {
 		padding-top: 4.375rem;
 		padding-bottom: 2.5rem;
-		width: 50rem;
+		width: 100%;
 		margin: 0 auto;
 		&__main {
 			padding-top: .625rem;
@@ -33,6 +33,21 @@
 			& img { height: 5.1875rem; }
 			height: 13.75rem;
 		}
+	}
+}
+
+@media screen and (max-width: 1600px) {
+    .track__img-track { 
+		top: 9rem;
+		right: 3.4375rem;
+		height: 1900px;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.track__img-track {
+		top: 10rem;
+		right: 3.4375rem;
+		height: 75%;
 	}
 }
 @media screen and (max-width: 1200px) {

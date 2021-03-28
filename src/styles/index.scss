@@ -57,7 +57,7 @@ html {
         width: 100%;
         margin: 0 auto;
         & section {
-            width: 95%;
+            width: 100%;
             margin: 0 auto;
         }
     }
@@ -78,6 +78,9 @@ html {
     .container {
         width: 100%;
     }
+    .mountain {
+		background-size: contain !important;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -95,15 +98,9 @@ html {
 
 @media screen and (max-width: 575px) {
     html {
-        font-size: 10px;
+        font-size: 9px;
     }
     .container {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 991px) {
-	.mountain {
-		background-size: contain !important;
-	}
 }
