@@ -48,6 +48,7 @@ plugins.push(
             { from: './src/images', to: 'assets/images' },
         ]
     }),
+    new MiniCssExtractPlugin(),
     );
 if (!devMode) {
     // enable in production only

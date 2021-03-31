@@ -1,14 +1,14 @@
 .global-header {
-	background: url('../images/global-header-background.png') repeat;
-	height: 9.8125rem;
+	background: url('../images/global-header-background.png') no-repeat bottom;
+	background-size: contain;
+	background-color: $primary;
+	padding-bottom: 40px;
 	&__wrapper {
 		@include wrapper($width: 100%);
 	}
 }
 @media screen and (max-width: 1200px) {
     .global-header {
-		background-size: cover;
-		height: 10.8125rem;
 		&__wrapper {
 			width: 100%;
 		}
@@ -16,8 +16,6 @@
 }
 @media screen and (max-width: 991px) {
     .global-header {
-		background-size: cover;
-		height: 10.8125rem;
 		&__wrapper {
 			width: 100%;
 		}
@@ -26,8 +24,6 @@
 
 @media screen and (max-width: 768px) {
 	.global-header {
-		background-size: cover;
-		height: 20rem;
 		&__wrapper {
 			width: 100%;
 		}
@@ -35,8 +31,6 @@
 }
 @media screen and (max-width: 540px) {
 	.global-header {
-		background-size: cover;
-		height: 28rem;
 		&__wrapper {
 			width: 100%;
 		}

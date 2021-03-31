@@ -2,7 +2,7 @@
 	height: 700px;
 	position: relative;
 	&__item {
-		height: 670px;
+		& img {display: block;}
 	}
 }
 .flickity-page-dots {

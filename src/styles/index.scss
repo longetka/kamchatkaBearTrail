@@ -1,4 +1,4 @@
-// Reset CSS
+// Reset CSS 
 @import 'reset.scss';
 
 // Fonts
@@ -85,7 +85,7 @@ html {
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 12px;
+        font-size: 16px;
     }
     .container {
         width: 100%;
@@ -94,12 +94,18 @@ html {
             margin: 0 auto;
         }
     }
+    .mountain {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 575px) {
-    html {
-        font-size: 9px;
+    .container {
+        width: 100%;
     }
+}
+@media screen and (max-width: 375px) {
+    html {font-size: 12px;}
     .container {
         width: 100%;
     }

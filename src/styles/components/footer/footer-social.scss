@@ -1,6 +1,8 @@
 .footer-social {
-	height: 97px;
-	background: url('../images/background-track-social.jpg') repeat;
+	padding: 40px 15px 0;
+	background: url('../images/background-track-social.jpg') repeat-x top;
+	background-color: $primary;
+	background-size: contain;
 	&__link {
 		& a {
 			text-decoration: none;
@@ -22,18 +24,30 @@
 	}
 }
 
-@media screen and (max-width: 540px) {
-	.footer-social__link {
-		display: flex;
-		align-items: center;
-		& a {
-			flex-direction: column-reverse;
-			font-size: .875rem;
-			text-align: center;
-			& img {
-				padding-left: 0.425rem;
-				width: 25%;
+@media screen and (max-width: 991px) {
+	.footer-social {
+		background-size: contain;
+		background-color: $primary;
+	}
+}
+@media screen and (max-width: 768px) {
+	.footer-social {
+		padding-top: 20px;
+		&__link {
+			display: flex;
+			align-items: center;
+			& a {
+				flex-direction: column-reverse;
+				font-size: .875rem;
+				text-align: center;
+				& img {
+					padding-left: 0.425rem;
+					width: 25%;
+				}
 			}
+		}
+		&__link:not(:first-child) {
+			padding-left: 0.625rem;
 		}
 	}
 }

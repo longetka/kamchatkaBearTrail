@@ -95,9 +95,6 @@
 		&__main {
 			width: 65%;
 		}
-		& img {
-			width: 95%;
-		}
 	}
 }
 @media screen and (max-width: 540px) {
@@ -112,10 +109,7 @@
 			flex-direction: column;
 		}
 		&__main {
-			width: 100%;
-		}
-		& img {
-			width: 95%;
+			width: 97%;
 		}
 	}
 }

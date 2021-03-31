@@ -12,7 +12,7 @@
 
 	&-details {
 		padding-top: 4.375rem;
-		padding-bottom: 2.5rem;
+		padding-bottom: 5.5rem;
 		width: 100%;
 		margin: 0 auto;
 		&__main {
@@ -52,4 +52,12 @@
 }
 @media screen and (max-width: 1200px) {
     .track__img-track { display: none; }
+}
+@media screen and (max-width: 768px) {
+	.track-details__main {
+		flex-direction: column;
+		& p {
+			padding: 30px 0;
+		}
+	}
 }

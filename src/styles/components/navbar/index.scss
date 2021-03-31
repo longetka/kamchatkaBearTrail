@@ -21,7 +21,7 @@
 		}
 	}
 	&__contacts {
-		flex-basis: 12.906%;
+		flex-basis: 13.906%;
 		& a {
 			@include font(
 				$font: $oswaldBold,
@@ -33,6 +33,39 @@
 		}
 	}
 }
+.burger {
+	display: none;
+	width: 30px;
+	height: 25px;
+	position: absolute;
+	z-index: 10;
+	top: 20px;
+	right: 15px;
+	&-button {
+		position: relative;
+		width: 100%;
+		height: 2px;
+		background-color: $white;
+		&::before, &::after {
+			content: '';
+			width: 30px;
+			height: 2px;
+			background-color: $white;
+			position: absolute;
+		}
+		&::after {
+			bottom: -20px;
+		}
+		&::before {
+			top: 10px;
+		}
+	}
+}
+.open {
+	display: flex !important;
+	transform: translateX(0px) !important;
+}
+
 @media screen and (max-width: 991px) {
 	.navbar {
 		
@@ -45,26 +78,86 @@
 		}
 	}
 }
+
 @media screen and (max-width: 768px) {
 	.navbar {
-		height: 16rem;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		position: relative;
+
 		&__logo {
-			flex: 30%;
+			width: 100%;
+			position: relative;
 			& img {
-				width: 100%;
+				width: 40%;
 			}
 		}
 		&__list {
-			width: 80%;
-			flex-basis: 100%;
-			flex-direction: row;
+			display: none;
+			justify-content: space-evenly;
+			transition: transform .3s ease-in-out;
+			transform: translateX(768px);
+			position: absolute;
+			width: 100%;
+			height: 230px;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background-color: rgba(0,15,55);
+			font-size: 2rem;
+			flex-direction: column;
+			align-items: center;
+			& li a {
+				font-size: 1.5rem;
+			}
 		}
+		&__contacts {
+			flex: 50%;
+			position: relative;
+		}
+	}
+	.burger {
+		display: block;
+	}
+}
+@media screen and (max-width: 540px) {
+	.navbar {
+		flex-direction: row;
+		flex-wrap: wrap;
+		position: relative;
+
+		&__logo {
+			flex: 90%;
+			position: relative;
+			& img {
+				width: 80%;
+			}
+		}
+		&__list {
+			justify-content: space-evenly;
+			transition: transform .3s ease-in-out;
+			transform: translateX(540px);
+			position: absolute;
+			width: 100%;
+			height: 160px;
+			top: 0px;
+			left: 0;
+			z-index: 1;
+			background-color: rgba(0,15,55);
+			font-size: 2rem;
+			flex-direction: column;
+			align-items: center;
+			& li a {
+				font-size: 1.5rem;
+			}
+		}
+		&__contacts {
+			flex: 50%;
+			position: relative;
+		}
+	}
+	.burger {
+		display: block;
 	}
 }
 
-@media screen and (max-width: 540px) {
-	.navbar {
-		height: 15rem;
-	}
-}

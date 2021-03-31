@@ -52,5 +52,9 @@
 			);
 		}
 	}
-
+}
+@media screen and (max-width: 540px) {
+	.footer {
+		height: 20rem;
+	}
 }

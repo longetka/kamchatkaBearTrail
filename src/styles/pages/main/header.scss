@@ -3,7 +3,8 @@
 		// @include wrapper($width: 1170px);
 		background: url('../images/background-header.png') no-repeat;
 		background-size: cover;
-		height: 100vh;
+		height: 100%;
+		padding-bottom: 30px;
 	}
 	&__bg-video {
 		position: absolute;
@@ -27,5 +28,46 @@
 	}
 	&__bg-bottom {
 		width: 100%;
+		margin-top: -30px;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.header {
+		&__bg-bottom {
+			margin-top: -52px;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.header {
+		&__wrapper {
+			height: 100%;
+		}
+		&__offer {
+			& h1 {
+				font-size: 1.5rem;
+			}
+		}
+		&__bg-bottom {
+			margin-top: -50px;
+			height: 50px;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.header {
+		&__bg-bottom {
+			margin-top: -32px;
+			height: 44px;
+		}
+	}
+}
+@media screen and (max-width: 375px) {
+	.header {
+		&__bg-bottom {
+			margin-top: -32px;
+			height: 35px;
+		}
 	}
 }

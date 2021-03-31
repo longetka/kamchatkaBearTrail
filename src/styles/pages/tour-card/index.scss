@@ -1,12 +1,11 @@
 .tour-card {
 
 	&__description {
-		height: 12.5rem;
 		background-color: $primary;
 		position: relative;
 		
 		& p {
-			height: 4.375rem;
+			padding: 15px 15px 50px 15px;
 			@include wrapper($width: 1170px);
 			@include font(
 				$font: $oswaldRegular,
